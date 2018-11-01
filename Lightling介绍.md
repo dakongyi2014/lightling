@@ -30,9 +30,9 @@ Lightling
 
 ​        相关架构：
 
-​                ![](C:\Users\admin\Desktop\lightling架构图.png)
+​                ![](https://github.com/dakongyi2014/lightling/blob/master/lightling%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
-​               ![](C:\Users\admin\Desktop\monitor.png)
+​               ![](https://github.com/dakongyi2014/lightling/blob/master/monitor.png)
 
 ​                           
 
