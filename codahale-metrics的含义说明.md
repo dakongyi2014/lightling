@@ -6,8 +6,11 @@ Reporter类是将metrics按照一定的时间间隔输出
 
 ```
 ConsoleReporter reporter = ConsoleReporter.forRegistry(registry)
-      .convertRatesTo(TimeUnit.SECONDS)//输出的速率的时间单位
-      .convertDurationsTo(TimeUnit.MILLISECONDS)//持续时间的单位
+      .convertRatesTo(TimeUnit.SECONDS) //输出的rate的时间单位  rateUnit
+      .convertDurationsTo(TimeUnit.MILLISECONDS)//设置duration的单位 durationUnit
+      //Timer才会使用到该单位
+        //调用代码示例子：
+       // output.printf(locale, "               min = %2.2f %s%n", convertDuration(snapshot.getMin()), getDurationUnit());
       .build();
 reporter.start(1, TimeUnit.SECONDS);//从启动后的1s后开始（所以通常第一个计数都是不准的，从第二个开始会越来越准），每隔一秒从MetricRegistry钟poll一次数据
 System.out.println("执行与业务逻辑");
