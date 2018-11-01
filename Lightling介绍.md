@@ -1,6 +1,6 @@
 Lightling
 
-​       lightling是我构想的一个实时计算平台，目的是简化实时计算的开发难度，为实时计算job的运行提供必要的监控和预警。为实时job是7*24小时能力保驾护航。
+​       lightling是我今年10月份才开始构想的一个实时计算平台，目的是简化实时计算的开发难度，为实时计算job的运行提供必要的监控和预警。为实时job是7*24小时能力保驾护航。
 
 ​       目前进展，
 
@@ -28,7 +28,11 @@ Lightling
 
 ​                 后续计划：根据采集到的job运行数据监控（如timeline,stage运行时间，job运行时间，每轮batch数据输入的速度，数据量的大小，每轮batchSink的时间，task失败次数，executor失败次数等），以及资源分配数据（如每个application的container在各个机器分布的情况，每个job申请的executor的数据，申请的内存，cup core等资源的监控）再配合运维提供的机器层面的监控metic。制定符合我们平台的各类预警指标。并进行预警。真正实现实时计算的稳，准，快的要求。
 
-​        相关架构：
+​          目前lightling还很弱小，还处于非常原始的阶段。是一个丑小鸭。目前我正在联系我以前北京的同事希望能够争取更多的力量加入进来。
+
+​          未来路线图
+
+
 
 ​                ![](https://github.com/dakongyi2014/lightling/blob/master/lightling%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
